@@ -3,59 +3,256 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лизинговый калькулятор</title>
+    <title>Goldy Store</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
-    <header></header>
-    <main>
-      <section class="calculator container">
-        <h1 class="calculator__title">Рассчитайте стоимость автомобиля в лизинг</h1>
-        <div class="calculator__inner-wrapper">
-          <form class="calculator__form form" id="creditForm" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__fieldset form__fieldset--editable">
-              <legend class="form__legend">Желаемая сумма кредита</legend>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="priceDisplay">&#8381;</label>
-                <input type="text" id="priceDisplay" name="credit" value="3300000" oninput="priceRange.value = this.value" placeholder="1 500 000 - 10 000 000">
-              </div>
-              <input type="range" id="priceRange" step="10000" min="1500000" max="10000000" value="3300000" oninput="priceDisplay.value = this.value">
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--editable">
-              <legend class="form__legend">Первоначальный взнос</legend>
-              <div class="form__input-wrapper">
-                <label class="form__label form__label--percent" for="depositDisplay" id="depositPercent">%</label>
-                <input type="text" id="depositDisplay" name="deposit" value="0.1" oninput="depositRange.value = this.value" placeholder="10% - 60%">
-              </div>
-              <input type="range" id="depositRange" min="0.1" max="0.6" value="0.1" step="0.01" oninput="depositDisplay.value = this.value">
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--editable">
-              <legend class="form__legend">Срок лизинга</legend>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="creditTimeDisplay">мес.</label>
-                <input type="text" id="creditTimeDisplay" name="date" value="60" oninput="creditTimeRange.value = this.value" placeholder="6 - 120">
-              </div>
-              <input type="range" id="creditTimeRange" min="6" max="120" value="60" oninput="creditTimeDisplay.value = this.value">
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--readonly">
-              <legend class="form__legend">Сумма договора лизинга</legend>
-              <label class="visually-hidden" for="dealAmount">Сумма договора лизинга</label>
-              <input type="text" name="dealPrice" id="dealAmount" readonly>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--readonly">
-              <legend class="form__legend">Ежемесячный платеж от</legend>
-              <label class="visually-hidden" for="monthlyPayment">Ежемесячный платеж от</label>
-              <input type="text" name="monthlyPayment" id="monthlyPayment" readonly>
-            </fieldset>
-            <div>
-              <button class="form__submit-button" id="creditFormSubmit" type="submit" name="creditForm">Оставить заявку</button>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__info-content">
+          <div class="header__contacts">
+            <div class="header__city-selector">
+              <svg width="12" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка выбора локации.">
+                <use href="img/sprite.svg#location"></use>
+              </svg>
+              <select name="select">
+                <option value="value1" selected>Санкт-Петербург</option>
+                <option value="value2">Москва</option>
+              </select>
             </div>
-          </form>
+            <div class="header__phone">
+              <svg width="16" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка телефона.">
+                <use href="img/sprite.svg#phone"></use>
+              </svg>
+              <a href="tel:88007852535">8 800 785-25-35</a>
+            </div>
+          </div>
+          <div class="header__logo">
+            <a class="header__logo-link" href="#">
+              <span class="visually-hidden">Логотип компании.</span>
+              <img width="183" height="52" src="./img/logo.png" alt="store-logo.">
+            </a>
+          </div>
+          <div class="header__user-interface">
+            <div class="header__auth-links">
+              <a href="#" class="header__login-link">Вход</a>
+              <span class="header__slash">|</span>
+              <a href="#" class="header__register-link">Регистрация</a>
+            </div>
+            <div class="header__user-actions">
+              <a href="#" class="header__favorites">
+                <span class="visually-hidden">Избранное.</span>
+                <svg width="17" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
+                  <use href="img/sprite.svg#favourites"></use>
+                </svg>
+                <span class="header__favorites-badge">23</span>
+              </a>
+              <a href="#" class="header__chart">
+                <span class="visually-hidden">Статистика.</span>
+                <svg width="13" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка статистика.">
+                  <use href="img/sprite.svg#chart"></use>
+                </svg>
+              </a>
+              <a href="#" class="header__cart">
+                <span class="visually-hidden">Корзина.</span>
+                <svg width="16" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Иконка корзины.">
+                  <use href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="primary-menu">
+        <div class="primary-menu__container container">
+          <ul class="primary-menu__list">
+            <li class="primary-menu__item">
+              <a href="#">Каталог</a>
+            </li>
+            <li class="primary-menu__item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="primary-menu__item">
+              <a href="#">Бренды</a>
+            </li>
+            <li class="primary-menu__item">
+              <a href="#">Магазины</a>
+            </li>
+            <li class="primary-menu__item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="primary-menu__item">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="primary-menu__item">
+              <a href="#">Статьи</a>
+            </li>
+          </ul>
+          <div class="primary-menu__search">
+            <form class="primary-menu__search-form" id="searchForm" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden" for="search">Поиск по сайту.</label>
+              <input type="text" id="search" placeholder="Поиск по сайту">
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="visually-hidden">Ювелирный магазин Golden Store.</h1>
+        <div class="hero__container container">
+          <!-- Slider main container -->
+          <div class="hero-swiper swiper">
+            <h2 class="visually-hidden">Слайдер с суперскидками.</h2>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-slide__info">
+                  <h3>Суперскидка до 60%</h3>
+                  <p>на бриллианты</p>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="swiper-slide__image">
+                  <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__info">
+                  <h3>Суперскидка до 30%</h3>
+                  <p>на серьги</p>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="swiper-slide__image">
+                  <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__info">
+                  <h3>Суперскидка до 50%</h3>
+                  <p>на кольца</p>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="swiper-slide__image">
+                  <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </section>
+      <section class="popular">
+        <div class="popular__container container">
+          <h2>Популярные категории</h2>
+          <ul class="popular__list">
+            <li class="popular__item">
+              <a class="popular__item-link" href="#">
+                <div class="popular__image-wrapper">
+                  <img src="./img/popular/1.png" alt="Кольца.">
+                </div>
+                <div class="popular__item-title">
+                  <h3>Кольца</h3>
+                </div>
+              </a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__item-link" href="#">
+                <div class="popular__image-wrapper">
+                  <img src="./img/popular/2.png" alt="Серьги.">
+                </div>
+                <div class="popular__item-title">
+                  <h3>Серьги</h3>
+                </div>
+              </a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__item-link" href="#">
+                <div class="popular__image-wrapper">
+                  <img src="./img/popular/3.png" alt="Помолвочные кольца.">
+                </div>
+                <div class="popular__item-title">
+                  <h3>Помолвочные кольца</h3>
+                </div>
+              </a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__item-link" href="#">
+                <div class="popular__image-wrapper">
+                  <img src="./img/popular/4.png" alt="Браслеты.">
+                </div>
+                <div class="popular__item-title">
+                  <h3>Браслеты</h3>
+                </div>
+              </a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__item-link" href="#">
+                <div class="popular__image-wrapper">
+                  <img src="./img/popular/5.png" alt="Колье и подвески.">
+                </div>
+                <div class="popular__item-title">
+                  <h3>Колье и подвески</h3>
+                </div>
+              </a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__item-link" href="#">
+                <div class="popular__image-wrapper">
+                  <img src="./img/popular/6.png" alt="Часы.">
+                </div>
+                <div class="popular__item-title">
+                  <h3>Часы</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sale">
+        <div class="sale__container container">
+          <h2>Распродажа</h2>
+          <!-- Slider main container -->
+          <div class="sale-swiper swiper">
+            <h2 class="visually-hidden">Слайдер с распродажей.</h2>
+            <div class="sale-swiper__navigation">
+              <div class="sale-swiper-pagination swiper-pagination"></div>
+              <div class="sale-swiper__navigation-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
+              </div>
+              <div class="swiper-slide">
+                <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
+              </div>
+              <div class="swiper-slide">
+                <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
+              </div>
+              <div class="swiper-slide">
+                <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer></footer>
-    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js" type="module"></script>
   </body>
 </html>

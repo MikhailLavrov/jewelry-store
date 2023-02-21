@@ -20,13 +20,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikhailLavrov/leasing-calc.git"
+    "url": "git+https://github.com/MikhailLavrov/goldy-store.git"
   },
   "author": "Mikhail Lavrov",
   "bugs": {
-    "url": "https://github.com/MikhailLavrov/leasing-calc/issues"
+    "url": "https://github.com/MikhailLavrov/goldy-store/issues"
   },
-  "homepage": "https://github.com/MikhailLavrov/leasing-calc#readme",
+  "homepage": "https://github.com/MikhailLavrov/goldy-store#readme",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^10.4.7",

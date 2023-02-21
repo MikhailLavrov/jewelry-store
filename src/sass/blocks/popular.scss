@@ -1,0 +1,81 @@
+.popular {
+  padding: 60px 0;
+}
+
+.popular__container {
+  flex-direction: column;
+}
+
+.popular h2 {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-family: $ff-prata;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  /* identical to box height, or 40px */
+  color: $color-default-black;
+}
+
+.popular__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.popular__item {
+  background-color: $color-light-1;
+}
+
+.popular__item-link {
+  padding: 38px 30px 17px;
+  min-height: 259px;
+
+  display: grid;
+  gap: 25px;
+
+  text-decoration: none;
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  text-align: center;
+  color: $color-default-black;
+}
+
+.popular__image-wrapper {
+  min-height: 147px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// .popular__image-wrapper img
+
+.popular__item-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular__item-title h3 {
+  margin: 0;
+
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+
+  // text-align: center;
+  color: $color-default-black;
+}

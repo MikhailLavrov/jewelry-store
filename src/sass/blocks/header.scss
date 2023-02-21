@@ -1,0 +1,162 @@
+.header {
+  margin-bottom: 20px;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__info-content {
+  padding: 23px 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__contacts {
+  min-width: 30%;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.header__city-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header__city-selector select {
+  padding: 5px;
+  padding-right: 12px;
+
+  appearance: none;
+
+  position: relative;
+
+  border: none;
+  outline: none;
+  background-image: url("../img/icons/select-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__phone a {
+  color: $color-default-black;
+  text-decoration: none;
+
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+}
+
+// .header__logo
+
+.header__logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.header__user-interface {
+  min-width: 30%;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 70px;
+}
+
+.header__auth-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+}
+
+.header__login-link,
+.header__register-link {
+  color: $color-default-black;
+  text-decoration: none;
+}
+
+// .header__slash
+
+
+.header__user-actions {
+  max-width: 115px;
+
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.header__favorites,
+.header__chart,
+.header__cart {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $color-light-1;
+  }
+
+  &:active {
+    background-color: $color-light-2;
+  }
+}
+
+.header__favorites {
+  position: relative;
+}
+
+.header__favorites-badge {
+  width: 19px;
+  height: 19px;
+
+  position: absolute;
+  content: "";
+  left: 14px;
+  top: -8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-default-white;
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 100%;
+  /* identical to box height, or 10px */
+
+  background-color: $color-contrast-1;
+  border-radius: 50%;
+}

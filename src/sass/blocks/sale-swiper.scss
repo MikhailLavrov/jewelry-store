@@ -1,0 +1,96 @@
+// .sale-swiper
+
+// .swiper-wrapper
+
+// .swiper-slide
+
+
+
+
+// Навигация
+.sale-swiper__navigation {
+  margin-bottom: 36px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.sale-swiper__navigation-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sale-swiper-pagination {
+  position: static;
+  width: auto !important;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.sale-swiper .swiper-pagination-bullet {
+  margin: 0 !important;
+  padding: 13px 30px;
+
+  width: auto;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+
+  border: none;
+  border-radius: 21px;
+
+  background-color: $color-light-4;
+  opacity: 1;
+  color: $color-default-black;
+}
+
+.sale-swiper .swiper-pagination-bullet-active {
+  background-color: $color-default-black;
+  color: $color-default-white;
+}
+
+.sale-swiper .swiper-button-prev,
+.sale-swiper .swiper-button-next {
+  margin: 0;
+
+  position: static;
+
+  display: flex;
+  align-items: center;
+
+  width: 54px;
+  height: 54px;
+
+  border: 1px solid $color-default-black;
+  border-radius: 50%;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../img/icons/arrow.svg");
+}
+
+.sale-swiper .swiper-button-next {
+  transform: rotate(180deg);
+}
+
+.sale-swiper .swiper-button-prev::after,
+.sale-swiper .swiper-button-next::after {
+  content: '';
+}

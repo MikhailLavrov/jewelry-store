@@ -45,27 +45,15 @@
   }
 }
 
-// Mobile first
-@mixin vp-375 {
-  @media (min-width: $vp-375) {
+// Desktop first
+@mixin vp-1299 {
+  @media (max-width: ($vp-1300 - 1px)) {
     @content;
   }
 }
 
-@mixin vp-768 {
-  @media (min-width: $vp-768) {
-    @content;
-  }
-}
-
-@mixin vp-1120 {
-  @media (min-width: $vp-1120) {
-    @content;
-  }
-}
-
-@mixin vp-1440 {
-  @media (min-width: $vp-1440) {
+@mixin vp-767 {
+  @media (max-width: ($vp-768 - 1px)) {
     @content;
   }
 }

@@ -1,11 +1,6 @@
 .container {
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 
-  max-width: 1440px;
-
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: calc(1300px + $indent-default * 2);
 }
