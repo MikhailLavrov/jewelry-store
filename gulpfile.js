@@ -114,7 +114,8 @@ function clean() {
 function server(done) {
     browser.init({
     server: {
-        baseDir: 'build'
+        baseDir: 'build',
+        index: 'sitemap.html',
     },
         cors: true,
         notify: false,

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Document</title>
+</head>
+<body style="padding: 20px;">
+  <h1>Страница компонентов</h1>
+  <div>
+    <h2>slider-card</h2>
+    <div class="slider-card">
+      <div class="slider-card__header">
+        <div class="slider-card__badges">
+          <span class="slider-card__badge slider-card__badge--sale">Sale</span>
+          <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+        </div>
+        <button class="slider-card__favourite-button" type="button">
+          <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+            <use href="img/sprite.svg#favourites-filled"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="slider-card__slider">
+        <div class="slider-card-swiper swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+            </div>
+            <div class="swiper-slide">
+              <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+            </div>
+            <div class="swiper-slide">
+              <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="slider-card__info-wrapper">
+        <div class="slider-card__price-wrapper">
+          <span class="slider-card__price-new">41 000 &#x20bd;</span>
+          <span class="slider-card__price-old">65 000 &#x20bd;</span>
+          <span class="slider-card__sale-badge">-45%</span>
+        </div>
+        <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
+      </div>
+      <div class="slider-card__params">
+        <select name="material-select">
+          <option value="wGold" selected>Белое золото</option>
+          <option value="yGold">Желтое золото</option>
+          <option value="silver">Серебро</option>
+        </select>
+        <select name="size-select">
+          <option value="s16" selected>Размер: 16</option>
+          <option value="s17">Размер: 17</option>
+          <option value="s18">Размер: 18</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/script.js" type="module"></script>
+</body>
+</html>

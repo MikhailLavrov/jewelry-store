@@ -1,8 +1,9 @@
-import {heroSwiperInit, saleSwiperInit} from './modules/swiper.js';
+import {heroSwiperInit, saleSwiperInit, sliderCardSwiper} from './modules/swiper.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     heroSwiperInit();
     saleSwiperInit();
+    sliderCardSwiper();
   });
 });

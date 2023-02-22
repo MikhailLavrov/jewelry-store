@@ -2,15 +2,16 @@
 
 // .swiper-wrapper
 
-// .swiper-slide
-
-
-
+.sale-swiper .swiper-slide {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
 
 // Навигация
 .sale-swiper__navigation {
   margin-bottom: 36px;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
