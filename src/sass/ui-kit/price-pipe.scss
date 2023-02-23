@@ -1,6 +1,7 @@
 .price-pipe {
   display: flex;
   align-items: center;
+  gap: 16px;
 }
 
 .price-pipe__value {
@@ -9,8 +10,6 @@
   line-height: 100%;
 
   &--new {
-    margin-right: 8px;
-
     font-weight: 600;
     font-size: 18px;
     /* identical to box height, or 18px */

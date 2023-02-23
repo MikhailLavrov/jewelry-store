@@ -1,0 +1,43 @@
+.timer {
+  padding: 12px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-light-9;
+}
+
+.timer__item {
+  padding: 6px 10px;
+  text-align: center;
+
+  background-color: $color-default-white;
+  box-shadow: 0 0 0 1px #D0D0D0 inset;
+}
+
+.timer__separator {
+  margin: 0 9px;
+
+  display: inline-block;
+}
+
+.timer__text {
+  font-size: 12px;
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 100%;
+  /* identical to box height, or 11px */
+  color: $color-default-black;
+}
+
+.timer__number {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  color: $color-default-black;
+}

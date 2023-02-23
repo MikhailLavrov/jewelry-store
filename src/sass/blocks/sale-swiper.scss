@@ -59,6 +59,12 @@
   background-color: $color-light-4;
   opacity: 1;
   color: $color-default-black;
+
+  transition: $transition-3;
+
+  &:hover:not(.sale-swiper .swiper-pagination-bullet-active) {
+    background-color: $color-light-10;
+  }
 }
 
 .sale-swiper .swiper-pagination-bullet-active {

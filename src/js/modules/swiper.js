@@ -38,3 +38,14 @@ export const sliderCardSwiper = () => {
     nested: true,
   });
 };
+
+export const dailySwiperInner = () => {
+  new Swiper('.daily-swiper-inner', {
+    loop: false,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    nested: true,
+  });
+};

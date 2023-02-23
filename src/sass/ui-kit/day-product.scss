@@ -1,0 +1,137 @@
+.day-product {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+// .day-product__info
+
+.day-product__content {
+  position: relative;
+}
+
+.day-product__content-header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.daily-swiper-inner .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.daily-swiper-inner .swiper-slide img {
+  object-fit: cover;
+  box-sizing: border-box;
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+}
+
+.day-product .swiper-wrapper {
+  max-width: 550px;
+}
+
+.day-product .swiper-button-prev,
+.day-product .swiper-button-next {
+  &::after {
+    color: $color-default-black;
+    font-size: 16px;
+    line-height: 1;
+  }
+}
+
+//
+
+.day-product__title {
+  margin-bottom: 2px;
+}
+
+.day-product__title h3 {
+  margin: 24px 0 20px;
+
+  font-family: $ff-prata;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  /* identical to box height, or 32px */
+  color: $color-default-black;
+}
+
+.day-product__title span {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  color: $color-light-5;
+}
+
+.day-product__price-info {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $color-light-4;
+}
+
+.day-product .color-pick {
+  margin-bottom: 30px;
+}
+
+.sizes {
+  margin-bottom: 40px;
+}
+
+.day-product__actions {
+  display: grid;
+  grid-template-columns: minmax(auto, 400px) auto;
+  gap: 39px;
+}
+
+.day-product__buttons button {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.day-product__links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.day-product__links a,
+.day-product__links button,
+.day-product__links span {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  gap: 10px;
+
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  color: $color-default-black;
+}
+
+.day-product .chart-link {
+  stroke: $color-light-6;
+
+  &:hover svg {
+    stroke: $color-default-black;
+  }
+}

@@ -1,0 +1,30 @@
+.size-box {
+  padding: 9px 11px;
+
+  background-color: $color-default-white;
+  border: none;
+  box-shadow: 0 0 0 1px $color-light-11 inset;
+  cursor: pointer;
+  transition: $transition-1;
+
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-default-black;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $color-default-black inset;
+  }
+
+  &:active,
+  &--active {
+    background-color: $color-default-black;
+
+    color: $color-default-white;
+  }
+}

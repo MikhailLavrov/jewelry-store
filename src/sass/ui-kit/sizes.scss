@@ -1,0 +1,29 @@
+// .sizes
+
+.sizes__header {
+  margin-bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sizes__title {
+  margin: 0;
+  
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  /* identical to box height, or 12px */
+  text-transform: uppercase;
+  color: $color-default-black;
+}
+
+.sizes__list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
