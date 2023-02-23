@@ -1,0 +1,9 @@
+.promo {
+  padding: 60px 0;
+}
+
+.promo__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}

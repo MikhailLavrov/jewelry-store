@@ -1,0 +1,101 @@
+.ui-button-wrapper {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 21px;
+
+  display: block;
+  width: 100%;
+
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: $transition-3;
+
+  &--dark {
+    background-color: $color-default-black;
+    color: $color-default-white;
+
+    &:hover {
+      background-color: $color-dark-1;
+    }
+
+    &:active {
+      background-color: $color-dark-2;
+    }
+  }
+
+  &--light {
+    background-color: $color-default-white;
+    color: $color-default-black;
+    box-shadow: 0 0 0 1px $color-dark-2 inset;
+
+    &:hover {
+      background-color: $color-default-black;
+      color: $color-default-white;
+    }
+
+    &:active {
+      background-color: $color-dark-2;
+    }
+  }
+}
+
+.button-round {
+  padding: 0;
+
+  width: 54px;
+  height: 54px;
+  box-shadow: 0 0 0 1px $color-default-black inset;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  transition: $transition-2;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icons/arrow.svg");
+    transition: $transition-1;
+  }
+
+  &:hover {
+    background-color: $color-light-9;
+  }
+
+  &:active {
+    background-color: $color-light-9;
+  }
+
+  &--prev {
+    &:active {
+      &::after {
+        transform: translateX(-8px);
+      }
+    }
+  }
+
+  &--next {
+    transform: rotate(180deg);
+    &:active {
+      &::after {
+        transform: translateX(-8px);
+      }
+    }
+  }
+}

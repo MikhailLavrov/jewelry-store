@@ -1,0 +1,28 @@
+.badge {
+  padding: 4px 12px;
+
+  border-radius: 15px;
+
+  color: $color-default-white;
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 100%;
+  /* identical to box height, or 13px */
+
+  &--hit {
+    background-color: $color-contrast-3;
+  }
+  &--sale {
+    background-color: $color-contrast-2;
+  }
+  &--sale-value {
+    padding: 4px 8px;
+    background-color: $color-contrast-4;
+  }
+  &--new {
+    background-color: $color-default-black;
+  }
+}
+

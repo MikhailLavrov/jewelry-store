@@ -47,7 +47,7 @@
   /* identical to box height, or 16px */
   text-align: center;
   color: $color-default-black;
-  transition: all 0.5s ease-in-out;
+  transition: $transition-5;
 
   img {
     transition: transform 0.5s ease-in-out;

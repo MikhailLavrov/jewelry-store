@@ -32,7 +32,7 @@
   color: $color-default-black;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
+  transition: $transition-2;
 
   &:hover {
     opacity: 0.5;

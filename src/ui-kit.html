@@ -11,12 +11,22 @@
 <body style="padding: 20px;">
   <h1>Страница компонентов</h1>
   <div>
+    <a href="index.html">Перейти к INDEX.html</a>
+    <div><hr></div>
+    <h2>badges</h2>
+    <div>
+      <span class="badge badge--sale">Sale</span>
+      <span class="badge badge--hit">Хит</span>
+      <span class="badge badge--new">New</span>
+      <span class="badge badge--sale-value">-45%</span>
+    </div>
+    <div><hr></div>
     <h2>slider-card</h2>
     <div class="slider-card">
       <div class="slider-card__header">
         <div class="slider-card__badges">
-          <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-          <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+          <span class="badge badge--sale">Sale</span>
+          <span class="badge badge--hit">Хит</span>
         </div>
         <button class="slider-card__favourite-button" type="button">
           <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
@@ -43,10 +53,10 @@
         </div>
       </div>
       <div class="slider-card__info-wrapper">
-        <div class="slider-card__price-wrapper">
-          <span class="slider-card__price-new">41 000 &#x20bd;</span>
-          <span class="slider-card__price-old">65 000 &#x20bd;</span>
-          <span class="slider-card__sale-badge">-45%</span>
+        <div class="slider-card__price-wrapper price-pipe">
+          <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+          <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+          <span class="price-pipe__sale-badge badge badge--sale-value">-45%</span>
         </div>
         <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
       </div>
@@ -61,6 +71,97 @@
           <option value="s17">Размер: 17</option>
           <option value="s18">Размер: 18</option>
         </select>
+      </div>
+    </div>
+    <div><hr></div>
+    <h2>promo-card</h2>
+    <div class="promo-card">
+      <div class="promo-card__text">
+        <p>Скидки на все&nbsp;украшения с бриллиантами</p>
+        <div class="promo-card__sale-value promo-card__sale-value--blue">
+          До&nbsp;<span>-50%</span>
+        </div>
+      </div>
+      <div class="promo-card__image">
+        <img src="./img/content/promo/1.png" alt="promo.">
+      </div>
+    </div>
+    <div><hr></div>
+    <div style="max-width: 20%; width: 100%;">
+      <h2>price pipe</h2>
+      <div class="price-pipe">
+        <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+        <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+        <span class="price-pipe__sale-badge badge badge--sale-value">-45%</span>
+      </div>
+    </div>
+    <div><hr></div>
+    <h2>icon links && buttons</h2>
+    <div style="display: flex; gap: 20px; align-items: center;">
+      <!-- Избранное + badge V -->
+      <a href="#" class="favorites-link">
+        <span class="visually-hidden">Избранное.</span>
+        <svg width="17" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
+          <use href="img/sprite.svg#favourites"></use>
+        </svg>
+        <span class="favorites-link__badge">23</span>
+      </a>
+      <!-- Избранное stroke V -->
+      <a href="#" class="favorites-link">
+        <span class="visually-hidden">Избранное.</span>
+        <svg width="17" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
+          <use href="img/sprite.svg#favourites"></use>
+        </svg>
+      </a>
+      <!-- Избранное filled V -->
+      <button class="favorites-button-filled" type="button">
+        <span class="visually-hidden">Избранное.</span>
+        <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
+          <use href="img/sprite.svg#favourites-filled"></use>
+        </svg>
+      </button>
+      <!-- Статистика V -->
+      <a href="#" class="chart-link">
+        <span class="visually-hidden">Статистика.</span>
+        <svg width="13" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка статистика.">
+          <use href="img/sprite.svg#chart"></use>
+        </svg>
+      </a>
+      <!-- Корзина V -->
+      <a href="#" class="cart-link">
+        <span class="visually-hidden">Корзина.</span>
+        <svg width="16" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Иконка корзины.">
+          <use href="img/sprite.svg#cart"></use>
+        </svg>
+      </a>
+      <!-- Показать (глаз) V -->
+      <a href="#" class="view-link">
+        <span class="visually-hidden">Корзина.</span>
+        <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+          <use href="img/sprite.svg#view-eye"></use>
+        </svg>
+      </a>
+      <!-- Поповер с вопросом V -->
+      <a href="#" class="popover-question-link">
+        <span class="visually-hidden">Подсказка всплывающая.</span>
+        ?
+      </a>
+    </div>
+    <div><hr></div>
+    <h2>buttons</h2>
+    <div>
+      <!-- Add to cart -->
+      <div class="ui-button-wrapper">
+        <button class="button button--dark" type="button">В корзину</button>
+      </div>
+      <!-- Купить в 1 клик -->
+      <div class="ui-button-wrapper">
+        <a class="button button--light" href="#">Купить в 1 клик</a>
+      </div>
+      <!-- Кнопка круглая -->
+      <div class="ui-button-wrapper">
+        <button class="button-round button-round--prev" type="button"></button>
+        <button class="button-round button-round--next" type="button"></button>
       </div>
     </div>
   </div>

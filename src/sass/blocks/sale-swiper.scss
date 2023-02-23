@@ -71,27 +71,4 @@
   margin: 0;
 
   position: static;
-
-  display: flex;
-  align-items: center;
-
-  width: 54px;
-  height: 54px;
-
-  border: 1px solid $color-default-black;
-  border-radius: 50%;
-
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../../img/icons/arrow.svg");
-}
-
-.sale-swiper .swiper-button-next {
-  transform: rotate(180deg);
-}
-
-.sale-swiper .swiper-button-prev::after,
-.sale-swiper .swiper-button-next::after {
-  content: '';
 }

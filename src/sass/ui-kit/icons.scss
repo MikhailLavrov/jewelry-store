@@ -1,0 +1,151 @@
+.favorites-link {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition-2;
+
+  position: relative;
+
+  &:hover {
+    background-color: $color-light-1;
+  }
+
+  &:active {
+    background-color: $color-light-2;
+  }
+}
+
+.favorites-link__badge {
+  width: 19px;
+  height: 19px;
+
+  position: absolute;
+  content: "";
+  left: 20px;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-default-white;
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 100%;
+  /* identical to box height, or 10px */
+
+  background-color: $color-contrast-1;
+  border-radius: 50%;
+}
+
+.favorites-button-filled {
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: transparent;
+  transition: $transition-2;
+
+  cursor: pointer;
+
+  &:hover svg {
+    fill: $color-default-black;
+  }
+
+  &:active svg {
+    fill: $color-contrast-4;
+  }
+
+  & svg {
+    fill: $color-light-6;
+    transition: $transition-2;
+  }
+}
+
+.cart-link {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition-2;
+
+  &:hover {
+    background-color: $color-light-1;
+  }
+
+  &:active {
+    background-color: $color-light-2;
+  }
+}
+
+.chart-link {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition-2;
+
+  &:hover {
+    background-color: $color-light-1;
+  }
+
+  &:active {
+    background-color: $color-light-2;
+  }
+}
+
+.view-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  transition: $transition-2;
+
+  & svg {
+    fill: $color-light-6;
+    transition: $transition-2;
+  }
+
+  &:hover svg {
+    fill: $color-light-7;
+  }
+}
+
+.popover-question-link {
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-light-4;
+  border-radius: 50%;
+
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  /* identical to box height, or 12px */
+  color: $color-default-black;
+  text-decoration: none;
+  transition: $transition-2;
+
+  &:hover {
+    background-color: $color-light-8;
+  }
+}

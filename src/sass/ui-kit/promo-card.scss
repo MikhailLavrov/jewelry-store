@@ -1,0 +1,86 @@
+.promo-card {
+  background-color: $color-light-1;
+
+  max-width: 420px;
+  min-height: 290px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+
+  &:first-child img {
+    object-position: 20px;
+  }
+
+  &:nth-child(2) img {
+    object-position: bottom right;
+    object-fit: cover;
+  }
+
+  &:nth-child(3) img {
+    object-position: bottom;
+  }
+}
+
+.promo-card__text p {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  /* or 32px */
+  text-transform: uppercase;
+  color: $color-default-black;
+  transform: translateX(27px);
+}
+
+.promo-card__sale-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-contrast-5;
+  color: $color-default-white;
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  /* or 38px */
+
+  &--blue {
+    background-color: $color-contrast-5;
+  }
+
+  &--red {
+    background-color: $color-contrast-4;
+  }
+
+  &--yellow {
+    background-color: $color-contrast-3;
+  }
+}
+
+.promo-card__sale-value span {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 160%;
+  /* identical to box height, or 58px */
+}
+
+// .promo-card__sale-value
+
+.promo-card__image {
+  display: flex;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.promo-card__image img {
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left;
+}

@@ -31,6 +31,16 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: $transition-2;
+
+  &:hover svg {
+    opacity: 0.5;
+  }
+}
+
+.header__city-selector svg {
+  fill: $color-default-black;
+  transition: $transition-2;
 }
 
 .header__city-selector select {
@@ -40,6 +50,7 @@
   appearance: none;
 
   position: relative;
+  cursor: pointer;
 
   border: none;
   outline: none;
@@ -52,6 +63,15 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: $transition-2;
+
+  & svg {
+    transition: $transition-2;
+  }
+
+  &:hover svg {
+    opacity: 0.5;
+  }
 }
 
 .header__phone a {
@@ -100,16 +120,21 @@
 .header__register-link {
   color: $color-default-black;
   text-decoration: none;
+  transition: $transition-2;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 // .header__slash
 
 
 .header__user-actions {
-  max-width: 115px;
+  max-width: 130px;
 
   display: flex;
-  gap: 28px;
+  gap: 15px;
   align-items: center;
 }
 

@@ -44,20 +44,20 @@
               <a href="#" class="header__register-link">Регистрация</a>
             </div>
             <div class="header__user-actions">
-              <a href="#" class="header__favorites">
+              <a href="#" class="favorites-link">
                 <span class="visually-hidden">Избранное.</span>
                 <svg width="17" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                   <use href="img/sprite.svg#favourites"></use>
                 </svg>
-                <span class="header__favorites-badge">23</span>
+                <span class="favorites-link__badge">23</span>
               </a>
-              <a href="#" class="header__chart">
+              <a href="#" class="chart-link">
                 <span class="visually-hidden">Статистика.</span>
                 <svg width="13" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка статистика.">
                   <use href="img/sprite.svg#chart"></use>
                 </svg>
               </a>
-              <a href="#" class="header__cart">
+              <a href="#" class="cart-link">
                 <span class="visually-hidden">Корзина.</span>
                 <svg width="16" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Иконка корзины.">
                   <use href="img/sprite.svg#cart"></use>
@@ -115,7 +115,7 @@
                 <div class="swiper-slide__info">
                   <h3>Суперскидка до 60%</h3>
                   <p>на бриллианты</p>
-                  <a href="#">Подробнее</a>
+                  <a class="button button--dark" href="#">Подробнее</a>
                 </div>
                 <div class="swiper-slide__image">
                   <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
@@ -125,7 +125,7 @@
                 <div class="swiper-slide__info">
                   <h3>Суперскидка до 30%</h3>
                   <p>на серьги</p>
-                  <a href="#">Подробнее</a>
+                  <a class="button button--dark" href="#">Подробнее</a>
                 </div>
                 <div class="swiper-slide__image">
                   <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
@@ -135,7 +135,7 @@
                 <div class="swiper-slide__info">
                   <h3>Суперскидка до 50%</h3>
                   <p>на кольца</p>
-                  <a href="#">Подробнее</a>
+                  <a class="button button--dark" href="#">Подробнее</a>
                 </div>
                 <div class="swiper-slide__image">
                   <img width="548" height="548" src="./img/content/slider/ring.png" alt="Кольцо.">
@@ -146,8 +146,8 @@
             <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev button-round button-round--prev"></div>
+            <div class="swiper-button-next button-round button-round--next"></div>
           </div>
         </div>
       </section>
@@ -158,7 +158,7 @@
             <li class="popular__item">
               <a class="popular__item-link" href="#">
                 <div class="popular__image-wrapper">
-                  <img src="./img/popular/1.png" alt="Кольца.">
+                  <img src="./img/content/popular/1.png" alt="Кольца.">
                 </div>
                 <div class="popular__item-title">
                   <h3>Кольца</h3>
@@ -168,7 +168,7 @@
             <li class="popular__item">
               <a class="popular__item-link" href="#">
                 <div class="popular__image-wrapper">
-                  <img src="./img/popular/2.png" alt="Серьги.">
+                  <img src="./img/content/popular/2.png" alt="Серьги.">
                 </div>
                 <div class="popular__item-title">
                   <h3>Серьги</h3>
@@ -178,7 +178,7 @@
             <li class="popular__item">
               <a class="popular__item-link" href="#">
                 <div class="popular__image-wrapper">
-                  <img src="./img/popular/3.png" alt="Помолвочные кольца.">
+                  <img src="./img/content/popular/3.png" alt="Помолвочные кольца.">
                 </div>
                 <div class="popular__item-title">
                   <h3>Помолвочные кольца</h3>
@@ -188,7 +188,7 @@
             <li class="popular__item">
               <a class="popular__item-link" href="#">
                 <div class="popular__image-wrapper">
-                  <img src="./img/popular/4.png" alt="Браслеты.">
+                  <img src="./img/content/popular/4.png" alt="Браслеты.">
                 </div>
                 <div class="popular__item-title">
                   <h3>Браслеты</h3>
@@ -198,7 +198,7 @@
             <li class="popular__item">
               <a class="popular__item-link" href="#">
                 <div class="popular__image-wrapper">
-                  <img src="./img/popular/5.png" alt="Колье и подвески.">
+                  <img src="./img/content/popular/5.png" alt="Колье и подвески.">
                 </div>
                 <div class="popular__item-title">
                   <h3>Колье и подвески</h3>
@@ -208,7 +208,7 @@
             <li class="popular__item">
               <a class="popular__item-link" href="#">
                 <div class="popular__image-wrapper">
-                  <img src="./img/popular/6.png" alt="Часы.">
+                  <img src="./img/content/popular/6.png" alt="Часы.">
                 </div>
                 <div class="popular__item-title">
                   <h3>Часы</h3>
@@ -228,8 +228,8 @@
             <div class="sale-swiper__navigation">
               <div class="sale-swiper-pagination swiper-pagination"></div>
               <div class="sale-swiper__navigation-buttons">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev button-round button-round--prev"></div>
+                <div class="swiper-button-next button-round button-round--next"></div>
               </div>
             </div>
             <!-- Слайды ГЛАВНОГО слайдера -->
@@ -240,27 +240,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -268,12 +286,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -293,27 +310,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -321,12 +356,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -346,27 +380,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -374,12 +426,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -399,27 +450,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -427,12 +496,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -456,27 +524,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -484,12 +570,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -509,27 +594,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -537,12 +640,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -562,27 +664,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -590,12 +710,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -615,27 +734,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -643,12 +780,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -672,27 +808,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -700,12 +854,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -725,27 +878,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -753,12 +924,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -778,27 +948,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -806,12 +994,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -831,27 +1018,45 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
                           <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
                         </div>
                       </div>
@@ -859,12 +1064,11 @@
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -888,8 +1092,8 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="slider-card__favourite-button" type="button">
                       <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
@@ -918,10 +1122,10 @@
                   </div>
 
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -941,8 +1145,8 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="slider-card__favourite-button" type="button">
                       <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
@@ -971,10 +1175,10 @@
                   </div>
 
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -994,8 +1198,8 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="slider-card__favourite-button" type="button">
                       <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
@@ -1024,10 +1228,10 @@
                   </div>
 
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -1047,8 +1251,8 @@
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="slider-card__badge slider-card__badge--sale">Sale</span>
-                      <span class="slider-card__badge slider-card__badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="slider-card__favourite-button" type="button">
                       <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
@@ -1077,10 +1281,10 @@
                   </div>
 
                   <div class="slider-card__info-wrapper">
-                    <div class="slider-card__price-wrapper">
-                      <span class="slider-card__price-new">41 000 &#x20bd;</span>
-                      <span class="slider-card__price-old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge">-45%</span>
+                    <div class="slider-card__price-wrapper price-pipe">
+                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
                   </div>
@@ -1102,6 +1306,43 @@
             </div>
           </div>
 
+        </div>
+      </section>
+      <section class="promo">
+        <div class="promo__container container">
+          <div class="promo-card">
+            <div class="promo-card__text">
+              <p>Скидки на все&nbsp;украшения с бриллиантами</p>
+              <div class="promo-card__sale-value promo-card__sale-value--blue">
+                До&nbsp;<span>-50%</span>
+              </div>
+            </div>
+            <div class="promo-card__image">
+              <img width="200" height="290" src="./img/content/promo/1.png" alt="promo.">
+            </div>
+          </div>
+          <div class="promo-card">
+            <div class="promo-card__text">
+              <p>Скидки на&nbsp;кольца и&nbsp;браслеты</p>
+              <div class="promo-card__sale-value promo-card__sale-value--red">
+                До&nbsp;<span>-40%</span>
+              </div>
+            </div>
+            <div class="promo-card__image">
+              <img width="200" height="290" src="./img/content/promo/2.png" alt="promo.">
+            </div>
+          </div>
+          <div class="promo-card">
+            <div class="promo-card__text">
+              <p>снижение цен на&nbsp;обручальные кольца</p>
+              <div class="promo-card__sale-value promo-card__sale-value--yellow">
+                До&nbsp;<span>-60%</span>
+              </div>
+            </div>
+            <div class="promo-card__image">
+              <img width="200" height="290" src="./img/content/promo/3.png" alt="promo.">
+            </div>
+          </div>
         </div>
       </section>
     </main>

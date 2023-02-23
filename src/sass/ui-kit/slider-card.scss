@@ -2,6 +2,7 @@
   padding: 16px 24px 26px;
   max-width: 310px;
 
+  position: relative;
   border: 1px solid $color-light-4;
 
   &:hover {
@@ -16,28 +17,6 @@
 
 .slider-card__badges {
   margin-right: auto;
-}
-
-.slider-card__badge {
-  padding: 4px 12px;
-
-  border-radius: 15px;
-
-  color: $color-default-white;
-  font-family: $ff-inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 100%;
-  /* identical to box height, or 13px */
-
-  &--sale {
-    background-color: $color-contrast-2;
-  }
-
-  &--hit {
-    background-color: $color-contrast-3;
-  }
 }
 
 .slider-card__favourite-button {
@@ -57,48 +36,10 @@
 
 .slider-card__price-wrapper {
   margin-bottom: 16px;
-
-  display: flex;
-  align-items: center;
-}
-
-.slider-card__price-new {
-  margin-right: 8px;
-
-  font-family: $ff-inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  /* identical to box height, or 18px */
-  color: $color-default-black;
-}
-
-.slider-card__price-old {
-  font-family: $ff-inter;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  /* identical to box height, or 14px */
-  text-decoration-line: line-through;
-  color: $color-light-5;
 }
 
 .slider-card__sale-badge {
   margin-left: auto;
-  padding: 4px 8px;
-
-  background-color: $color-contrast-4;
-  border-radius: 15px;
-
-  font-family: $ff-inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 100%;
-  /* identical to box height, or 13px */
-  color: $color-default-white;
 }
 
 .slider-card__description {
@@ -139,16 +80,25 @@
 }
 
 .slider-card .swiper-slide {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.slider-card .swiper-slide .view-link {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
 .slider-card__params {
   margin-top: 24px;
+
   display: none;
   transform: translateY(100%);
-  transition: all 0.3s ease-in-out;
+  transition: $transition-3;
 }
 
 .slider-card:hover .slider-card__params {
@@ -176,5 +126,3 @@
   /* or 22px */
   color: $color-default-black;
 }
-
-
