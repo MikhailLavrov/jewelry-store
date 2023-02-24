@@ -1,0 +1,41 @@
+.articles {
+  padding: 60px 0 80px;
+}
+
+.articles__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articles__title {
+  margin-bottom: 40px;
+
+  font-family: $ff-prata;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  /* identical to box height, or 40px */
+  color: $color-default-black;
+}
+
+.articles__link {
+  text-decoration: none;
+  color: $color-default-black;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: $transition-2;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.articles__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}

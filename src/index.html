@@ -1345,160 +1345,375 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <div class="day-product">
-            <div class="day-product__content">
-              <div class="day-product__content-header">
-                <span class="badge badge--new">New</span>
-                <span class="badge badge--hit">Хит</span>
-                <span class="badge badge--sale">Sale</span>
-              </div>
-              <div class="day-product__content-body">
-                <!-- <img src="./img/content/daily/ring.png" alt=""> -->
-                <!-- Slider main container -->
-                <div class="daily-swiper-inner swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <img src="./img/content/daily/ring.png" alt="">
+      <section class="daily">
+        <div class="daily__container container">
+          <div class="daily__header">
+            <h2 class="daily__title">Товар дня</h2>
+            <div class="daily-swiper__buttons">
+              <div class="daily-swiper-prev button-round button-round--prev"></div>
+              <div class="daily-swiper-next button-round button-round--next"></div>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div class="daily-swiper swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="day-product">
+                  <div class="day-product__content">
+                    <div class="day-product__content-header">
+                      <span class="badge badge--new">New</span>
+                      <span class="badge badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
                     </div>
-                    <div class="swiper-slide">
-                      <img src="./img/content/daily/ring.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./img/content/daily/ring.png" alt="">
+                    <div class="day-product__content-body">
+                      <!-- <img src="./img/content/daily/ring.png" alt=""> -->
+                      <!-- Slider main container -->
+                      <div class="daily-swiper-inner swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <img src="./img/content/daily/ring.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/content/daily/ring.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/content/daily/ring.png" alt="">
+                          </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                      </div>
+                      <!-- <img src="./img/content/daily/ring.png" alt=""> -->
                     </div>
                   </div>
-                  <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-
+                  <div class="day-product__info">
+                    <div class="rating-wrapper">
+                      <div class="rating">
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <span>4,2</span>
+                    </div>
+                    <div class="day-product__title">
+                      <h3>Кольцо из золота с бриллиантами</h3>
+                      <span>Артикул: 1012076</span>
+                    </div>
+                    <div class="day-product__price-info">
+                      <div class="price-pipe">
+                        <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                        <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                        <span class="price-pipe__sale-badge badge badge--sale-value">-45%</span>
+                      </div>
+                      <div class="timer">
+                        <div class="timer__item">
+                          <div class="timer__number">12</div>
+                          <div class="timer__text">часов</div>
+                        </div>
+                        <div class="timer__separator">:</div>
+                        <div class="timer__item">
+                          <div class="timer__number">46</div>
+                          <div class="timer__text">минут</div>
+                        </div>
+                        <div class="timer__separator">:</div>
+                        <div class="timer__item">
+                          <div class="timer__number">51</div>
+                          <div class="timer__text">секунд</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="color-pick">
+                      <p class="color-pick__title">Цвет</p>
+                      <div class="color-pick__pallete">
+                        <button class="color-pick__button color-pick__button--grey" type="button"></button>
+                        <button class="color-pick__button color-pick__button--gold color-pick__button--active" type="button"></button>
+                        <button class="color-pick__button color-pick__button--red" type="button"></button>
+                        <button disabled class="color-pick__button color-pick__button--green" type="button"></button>
+                      </div>
+                    </div>
+                    <div class="sizes">
+                      <div class="sizes__header">
+                        <p class="sizes__title">Размер</p>
+                        <a href="#" class="popover-question-link">
+                          <span class="visually-hidden">Подсказка всплывающая.</span>
+                          ?
+                          <span class="popover-content">Также&nbsp;как&nbsp;существующая теория&nbsp;напрямую&nbsp;зависит от&nbsp;экономической целесообразности принимаемых&nbsp;решений.</span>
+                        </a>
+                      </div>
+                      <div class="sizes__list">
+                        <button class="size-box size-box--active">16,5</button>
+                        <button class="size-box">17,5</button>
+                        <button class="size-box">18,5</button>
+                        <button class="size-box">19</button>
+                        <button class="size-box">19,5</button>
+                        <button class="size-box">19,5</button>
+                        <button class="size-box">18,5</button>
+                        <button class="size-box">19</button>
+                        <button class="size-box">19,5</button>
+                        <button class="size-box">19,5</button>
+                      </div>
+                    </div>
+                    <div class="day-product__actions">
+                      <div class="day-product__buttons">
+                        <button class="button button--dark" type="button">В корзину</button>
+                        <button class="button button--light" type="button">Купить в 1 клик</button>
+                      </div>
+                      <div class="day-product__links">
+                        <!--  -->
+                        <!-- Избранное filled V -->
+                        <button class="favorites-button-filled" type="button">
+                          <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
+                            <use href="img/sprite.svg#favourites-filled"></use>
+                          </svg>
+                          <span>Сохранить</span>
+                        </button>
+                        <!-- Статистика V -->
+                        <a href="#" class="chart-link">
+                          <svg width="13" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка статистика.">
+                            <use href="img/sprite.svg#chart"></use>
+                          </svg>
+                          <span>Сравнить</span>
+                        </a>
+                        <!-- Поделиться V -->
+                        <a href="#" class="share-link">
+                          <svg width="15" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Иконка поделиться.">
+                            <use href="img/sprite.svg#share"></use>
+                          </svg>
+                          <span>Поделиться</span>
+                        </a>
+                        <!--  -->
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- <img src="./img/content/daily/ring.png" alt=""> -->
+              </div>
+              <div class="swiper-slide">
+                <div class="day-product">
+                  <div class="day-product__content">
+                    <div class="day-product__content-header">
+                      <span class="badge badge--new">New</span>
+                      <span class="badge badge--hit">Хит</span>
+                      <span class="badge badge--sale">Sale</span>
+                    </div>
+                    <div class="day-product__content-body">
+                      <!-- <img src="./img/content/daily/ring.png" alt=""> -->
+                      <!-- Slider main container -->
+                      <div class="daily-swiper-inner swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <img src="./img/content/daily/ring.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/content/daily/ring.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/content/daily/ring.png" alt="">
+                          </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                      </div>
+                      <!-- <img src="./img/content/daily/ring.png" alt=""> -->
+                    </div>
+                  </div>
+                  <div class="day-product__info">
+                    <div class="rating-wrapper">
+                      <div class="rating">
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                        <span class="star">
+                          <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
+                            <use href="img/sprite.svg#rating-star"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <span>4,2</span>
+                    </div>
+                    <div class="day-product__title">
+                      <h3>Кольцо из золота с бриллиантами</h3>
+                      <span>Артикул: 1012076</span>
+                    </div>
+                    <div class="day-product__price-info">
+                      <div class="price-pipe">
+                        <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
+                        <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                        <span class="price-pipe__sale-badge badge badge--sale-value">-45%</span>
+                      </div>
+                      <div class="timer">
+                        <div class="timer__item">
+                          <div class="timer__number">12</div>
+                          <div class="timer__text">часов</div>
+                        </div>
+                        <div class="timer__separator">:</div>
+                        <div class="timer__item">
+                          <div class="timer__number">46</div>
+                          <div class="timer__text">минут</div>
+                        </div>
+                        <div class="timer__separator">:</div>
+                        <div class="timer__item">
+                          <div class="timer__number">51</div>
+                          <div class="timer__text">секунд</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="color-pick">
+                      <p class="color-pick__title">Цвет</p>
+                      <div class="color-pick__pallete">
+                        <button class="color-pick__button color-pick__button--grey" type="button"></button>
+                        <button class="color-pick__button color-pick__button--gold color-pick__button--active" type="button"></button>
+                        <button class="color-pick__button color-pick__button--red" type="button"></button>
+                        <button disabled class="color-pick__button color-pick__button--green" type="button"></button>
+                      </div>
+                    </div>
+                    <div class="sizes">
+                      <div class="sizes__header">
+                        <p class="sizes__title">Размер</p>
+                        <a href="#" class="popover-question-link">
+                          <span class="visually-hidden">Подсказка всплывающая.</span>
+                          ?
+                          <span class="popover-content">Также&nbsp;как&nbsp;существующая теория&nbsp;напрямую&nbsp;зависит от&nbsp;экономической целесообразности принимаемых&nbsp;решений.</span>
+                        </a>
+                      </div>
+                      <div class="sizes__list">
+                        <button class="size-box size-box--active">16,5</button>
+                        <button class="size-box">17,5</button>
+                        <button class="size-box">18,5</button>
+                        <button class="size-box">19</button>
+                        <button class="size-box">19,5</button>
+                        <button class="size-box">19,5</button>
+                        <button class="size-box">18,5</button>
+                        <button class="size-box">19</button>
+                        <button class="size-box">19,5</button>
+                        <button class="size-box">19,5</button>
+                      </div>
+                    </div>
+                    <div class="day-product__actions">
+                      <div class="day-product__buttons">
+                        <button class="button button--dark" type="button">В корзину</button>
+                        <button class="button button--light" type="button">Купить в 1 клик</button>
+                      </div>
+                      <div class="day-product__links">
+                        <!--  -->
+                        <!-- Избранное filled V -->
+                        <button class="favorites-button-filled" type="button">
+                          <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
+                            <use href="img/sprite.svg#favourites-filled"></use>
+                          </svg>
+                          <span>Сохранить</span>
+                        </button>
+                        <!-- Статистика V -->
+                        <a href="#" class="chart-link">
+                          <svg width="13" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка статистика.">
+                            <use href="img/sprite.svg#chart"></use>
+                          </svg>
+                          <span>Сравнить</span>
+                        </a>
+                        <!-- Поделиться V -->
+                        <a href="#" class="share-link">
+                          <svg width="15" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Иконка поделиться.">
+                            <use href="img/sprite.svg#share"></use>
+                          </svg>
+                          <span>Поделиться</span>
+                        </a>
+                        <!--  -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="day-product__info">
-              <div class="rating-wrapper">
-                <div class="rating">
-                  <span class="star">
-                    <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
-                      <use href="img/sprite.svg#rating-star"></use>
-                    </svg>
-                  </span>
-                  <span class="star">
-                    <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
-                      <use href="img/sprite.svg#rating-star"></use>
-                    </svg>
-                  </span>
-                  <span class="star">
-                    <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
-                      <use href="img/sprite.svg#rating-star"></use>
-                    </svg>
-                  </span>
-                  <span class="star">
-                    <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
-                      <use href="img/sprite.svg#rating-star"></use>
-                    </svg>
-                  </span>
-                  <span class="star">
-                    <svg width="17" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Rating start.">
-                      <use href="img/sprite.svg#rating-star"></use>
-                    </svg>
-                  </span>
-                </div>
-                <span>4,2</span>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+      <section class="articles">
+        <div class="articles__container container">
+          <div class="articles__header">
+            <h2 class="articles__title">Статьи</h2>
+            <a class="articles__link" href="#">
+              <span>Читать все</span>
+              <svg width="27" height="11" role="img" aria-hidden="true" focusable="false" aria-label="Иконка стрелки.">
+                <use href="img/sprite.svg#arrow-long"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="articles__content">
+            <div class="article-card">
+              <div class="article-card__image">
+                <img width="310" height="381" src="./img/content/articles/art-1.jpg" alt="Карточка статьи.">
               </div>
-              <div class="day-product__title">
-                <h3>Кольцо из золота с бриллиантами</h3>
-                <span>Артикул: 1012076</span>
+              <span class="article-card__date">21 сентября 2021</span>
+              <p class="article-card__text">Обручальные кольца: тренды 2021</p>
+            </div>
+            <div class="article-card">
+              <div class="article-card__image">
+                <img width="310" height="381" src="./img/content/articles/art-2.jpg" alt="Карточка статьи.">
               </div>
-              <div class="day-product__price-info">
-                <div class="price-pipe">
-                  <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                  <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                  <span class="price-pipe__sale-badge badge badge--sale-value">-45%</span>
-                </div>
-                <div class="timer">
-                  <div class="timer__item">
-                    <div class="timer__number">12</div>
-                    <div class="timer__text">часов</div>
-                  </div>
-                  <div class="timer__separator">:</div>
-                  <div class="timer__item">
-                    <div class="timer__number">46</div>
-                    <div class="timer__text">минут</div>
-                  </div>
-                  <div class="timer__separator">:</div>
-                  <div class="timer__item">
-                    <div class="timer__number">51</div>
-                    <div class="timer__text">секунд</div>
-                  </div>
-                </div>
+              <span class="article-card__date">25 сентября 2021</span>
+              <p class="article-card__text">Главные ювелирные тренды года</p>
+            </div>
+            <div class="article-card">
+              <div class="article-card__image">
+                <img width="310" height="381" src="./img/content/articles/art-3.jpg" alt="Карточка статьи.">
               </div>
-              <div class="color-pick">
-                <p class="color-pick__title">Цвет</p>
-                <div class="color-pick__pallete">
-                  <button class="color-pick__button color-pick__button--grey" type="button"></button>
-                  <button class="color-pick__button color-pick__button--gold color-pick__button--active" type="button"></button>
-                  <button class="color-pick__button color-pick__button--red" type="button"></button>
-                  <button disabled class="color-pick__button color-pick__button--green" type="button"></button>
-                </div>
+              <span class="article-card__date">21 сентября 2021</span>
+              <p class="article-card__text">Жемчуг: 7 малоизвестных фактов о культовом украшении</p>
+            </div>
+            <div class="article-card">
+              <div class="article-card__image">
+                <img width="310" height="381" src="./img/content/articles/art-4.jpg" alt="Карточка статьи.">
               </div>
-              <div class="sizes">
-                <div class="sizes__header">
-                  <p class="sizes__title">Размер</p>
-                  <a href="#" class="popover-question-link">
-                    <span class="visually-hidden">Подсказка всплывающая.</span>
-                    ?
-                    <span class="popover-content">Также&nbsp;как&nbsp;существующая теория&nbsp;напрямую&nbsp;зависит от&nbsp;экономической целесообразности принимаемых&nbsp;решений.</span>
-                  </a>
-                </div>
-                <div class="sizes__list">
-                  <button class="size-box size-box--active">16,5</button>
-                  <button class="size-box">17,5</button>
-                  <button class="size-box">18,5</button>
-                  <button class="size-box">19</button>
-                  <button class="size-box">19,5</button>
-                  <button class="size-box">19,5</button>
-                  <button class="size-box">18,5</button>
-                  <button class="size-box">19</button>
-                  <button class="size-box">19,5</button>
-                  <button class="size-box">19,5</button>
-                </div>
-              </div>
-              <div class="day-product__actions">
-                <div class="day-product__buttons">
-                  <button class="button button--dark" type="button">В корзину</button>
-                  <button class="button button--light" type="button">Купить в 1 клик</button>
-                </div>
-                <div class="day-product__links">
-                  <!--  -->
-                  <!-- Избранное filled V -->
-                  <button class="favorites-button-filled" type="button">
-                    <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
-                      <use href="img/sprite.svg#favourites-filled"></use>
-                    </svg>
-                    <span>Сохранить</span>
-                  </button>
-                  <!-- Статистика V -->
-                  <a href="#" class="chart-link">
-                    <svg width="13" height="15" role="img" aria-hidden="true" focusable="false" aria-label="Иконка статистика.">
-                      <use href="img/sprite.svg#chart"></use>
-                    </svg>
-                    <span>Сравнить</span>
-                  </a>
-                  <!-- Поделиться V -->
-                  <a href="#" class="share-link">
-                    <svg width="15" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Иконка поделиться.">
-                      <use href="img/sprite.svg#share"></use>
-                    </svg>
-                    <span>Поделиться</span>
-                  </a>
-                  <!--  -->
-                </div>
-              </div>
+              <span class="article-card__date">21 сентября 2021</span>
+              <p class="article-card__text">Как отличить золото от подделки: 10 практических советов</p>
             </div>
           </div>
         </div>

@@ -49,3 +49,13 @@ export const dailySwiperInner = () => {
     nested: true,
   });
 };
+
+export const dailySwiper = () => {
+  new Swiper('.daily-swiper', {
+    loop: false,
+    navigation: {
+      nextEl: '.daily-swiper-next',
+      prevEl: '.daily-swiper-prev'
+    },
+  });
+};

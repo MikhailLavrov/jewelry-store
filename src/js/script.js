@@ -1,4 +1,4 @@
-import {heroSwiperInit, saleSwiperInit, sliderCardSwiper, dailySwiperInner} from './modules/swiper.js';
+import {heroSwiperInit, saleSwiperInit, sliderCardSwiper, dailySwiperInner, dailySwiper} from './modules/swiper.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     saleSwiperInit();
     sliderCardSwiper();
     dailySwiperInner();
+    dailySwiper();
 
     const stars = document.querySelectorAll('.star');
     let rating = 0;

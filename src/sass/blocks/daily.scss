@@ -1,0 +1,31 @@
+.daily {
+  padding: 60px 0;
+
+}
+
+.daily__header {
+  position: relative;
+}
+
+.daily__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-family: $ff-prata;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  /* identical to box height, or 40px */
+  color: $color-default-black;
+}
+
+.daily-swiper__buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+}
