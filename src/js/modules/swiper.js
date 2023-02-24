@@ -25,7 +25,13 @@ export const saleSwiperInit = () => {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    }
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+    },
   });
 };
 
@@ -53,6 +59,7 @@ export const dailySwiperInner = () => {
 export const dailySwiper = () => {
   new Swiper('.daily-swiper', {
     loop: false,
+    spaceBetween: 40,
     navigation: {
       nextEl: '.daily-swiper-next',
       prevEl: '.daily-swiper-prev'

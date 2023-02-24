@@ -27,6 +27,13 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+
+  @include vp-767 {
+    flex-direction: column;
+    width: auto;
+    min-width: auto;
+    align-items: flex-start;
+  }
 }
 
 .header__city-selector {
@@ -113,6 +120,12 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 62px;
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 20px;
+    min-width: auto;
+  }
 }
 
 .header__auth-links {

@@ -1,6 +1,10 @@
 .ui-button-wrapper {
   max-width: 250px;
   margin-bottom: 20px;
+
+  @include vp-767 {
+    max-width: 100%;
+  }
 }
 
 .button {
@@ -48,6 +52,11 @@
     &:active {
       background-color: $color-dark-2;
     }
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    width: 100%;
   }
 }
 
