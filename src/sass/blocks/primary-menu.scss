@@ -19,6 +19,10 @@
 
 .primary-menu__item {
   list-style: none;
+
+  &--active a {
+    opacity: 0.5;
+  }
 }
 
 .primary-menu__item a {
@@ -46,7 +50,7 @@
 
 .primary-menu__search-form input {
   margin: 0;
-  padding: 24px 56px;
+  padding: 24px 49px;
 
   font-family: $ff-inter;
   font-style: normal;
@@ -57,7 +61,7 @@
 
   background-image: url("../../img/icons/search.svg");
   background-repeat: no-repeat;
-  background-position: center left 25px;
+  background-position: center left 20px;
 
   border: none;
   background-color: transparent;

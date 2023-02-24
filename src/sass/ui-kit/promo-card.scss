@@ -24,6 +24,7 @@
 }
 
 .promo-card__text p {
+  margin-top: 15px;
   font-family: $ff-inter;
   font-style: normal;
   font-weight: 600;
@@ -36,8 +37,11 @@
 }
 
 .promo-card__sale-value {
+  padding: 0 27px;
+  max-width: 195px;
   display: flex;
-  justify-content: center;
+  gap: 5px;
+  // justify-content: center;
   align-items: center;
   background-color: $color-contrast-5;
   color: $color-default-white;
@@ -66,11 +70,9 @@
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  line-height: 160%;
+  line-height: 140%;
   /* identical to box height, or 58px */
 }
-
-// .promo-card__sale-value
 
 .promo-card__image {
   display: flex;

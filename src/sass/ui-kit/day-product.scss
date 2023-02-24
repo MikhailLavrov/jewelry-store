@@ -2,7 +2,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
 }
 
 // .day-product__info
@@ -11,16 +10,20 @@
   position: relative;
 }
 
+.day-product__content-body {
+  max-width: 555px;
+}
+
 .day-product__content-header {
   position: absolute;
   z-index: 10;
-  top: 0;
-  left: 0;
+  top: 18px;
+  left: 15px;
 }
 
 .daily-swiper-inner .swiper-slide {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .daily-swiper-inner .swiper-slide img {
@@ -51,7 +54,7 @@
 }
 
 .day-product__title h3 {
-  margin: 24px 0 20px;
+  margin: 24px 0 17px;
 
   font-family: $ff-prata;
   font-style: normal;
@@ -105,7 +108,7 @@
 .day-product__links {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 23px;
 }
 
 .day-product__links a,

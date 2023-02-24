@@ -17,12 +17,21 @@
               <svg width="12" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка выбора локации.">
                 <use href="img/sprite.svg#location"></use>
               </svg>
-              <select name="city-select">
-                <option value="spb" selected>Санкт-Петербург</option>
-                <option value="msk">Москва</option>
-                <option value="nnovgorod">Нижний Новгород</option>
-                <option value="rostov">Ростов-на-Дону</option>
-              </select>
+              <form class="custom-select">
+                <div class="custom-select__select" data-state="">
+                  <div class="custom-select__select-title" data-default="Option 0">Санкт-Петербург</div>
+                  <div class="custom-select__select-content">
+                    <input id="singleSelect0" class="custom-select__input" type="radio" name="singleSelect" checked />
+                    <label for="singleSelect0" class="custom-select__label">Санкт-Петербург</label>
+                    <input id="singleSelect1" class="custom-select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect1" class="custom-select__label">Москва</label>
+                    <input id="singleSelect2" class="custom-select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect2" class="custom-select__label">Нижний Новгород</label>
+                    <input id="singleSelect3" class="custom-select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect3" class="custom-select__label">Ростов-на-Дону</label>
+                  </div>
+                </div>
+              </form>
             </div>
             <div class="header__phone">
               <svg width="16" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка телефона.">
@@ -70,7 +79,7 @@
       <div class="primary-menu">
         <div class="primary-menu__container container">
           <ul class="primary-menu__list">
-            <li class="primary-menu__item">
+            <li class="primary-menu__item primary-menu__item--active">
               <a href="#">Каталог</a>
             </li>
             <li class="primary-menu__item">
@@ -241,7 +250,6 @@
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
                       <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -261,7 +269,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -270,7 +278,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -279,7 +287,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -293,25 +301,11 @@
                       <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -331,7 +325,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -340,7 +334,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -349,7 +343,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -358,30 +352,14 @@
                   </div>
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">56 000 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -401,7 +379,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -410,7 +388,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -419,7 +397,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -428,30 +406,14 @@
                   </div>
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">37 500 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -471,7 +433,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -480,7 +442,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -489,7 +451,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -498,23 +460,9 @@
                   </div>
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">39 200 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
               </div>
@@ -525,7 +473,6 @@
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
                       <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -545,7 +492,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -554,7 +501,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -563,7 +510,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -577,25 +524,11 @@
                       <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -615,7 +548,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -624,7 +557,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -633,7 +566,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -642,30 +575,14 @@
                   </div>
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">56 000 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -685,7 +602,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -694,7 +611,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -703,7 +620,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -712,30 +629,14 @@
                   </div>
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">37 500 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -755,7 +656,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -764,7 +665,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -773,7 +674,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -782,23 +683,9 @@
                   </div>
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">39 200 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
               </div>
@@ -809,7 +696,6 @@
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
                       <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -829,7 +715,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -838,7 +724,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -847,7 +733,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -861,25 +747,11 @@
                       <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -899,7 +771,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -908,7 +780,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -917,7 +789,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -926,30 +798,14 @@
                   </div>
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">56 000 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -969,7 +825,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -978,7 +834,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -987,7 +843,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -996,30 +852,14 @@
                   </div>
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">37 500 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
                     <button class="favorites-button-filled" type="button">
                       <span class="visually-hidden">Избранное.</span>
@@ -1039,7 +879,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -1048,7 +888,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
                           <a href="#" class="view-link">
@@ -1057,7 +897,7 @@
                               <use href="img/sprite.svg#view-eye"></use>
                             </svg>
                           </a>
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
@@ -1066,23 +906,9 @@
                   </div>
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">39 200 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
               </div>
@@ -1093,34 +919,50 @@
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
                       <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/1.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
                       <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
@@ -1128,177 +970,168 @@
                       <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/2.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">56 000 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/3.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">37 500 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
                 <div class="slider-card">
                   <div class="slider-card__header">
                     <div class="slider-card__badges">
-                      <span class="badge badge--sale">Sale</span>
-                      <span class="badge badge--hit">Хит</span>
                     </div>
-                    <button class="slider-card__favourite-button" type="button">
-                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в избранное.">
+                    <button class="favorites-button-filled" type="button">
+                      <span class="visually-hidden">Избранное.</span>
+                      <svg width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка избранное.">
                         <use href="img/sprite.svg#favourites-filled"></use>
                       </svg>
                     </button>
                   </div>
-
                   <div class="slider-card__slider">
                     <div class="slider-card-swiper swiper">
                       <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                         <div class="swiper-slide">
-                          <img width="200" height="200" src="./img/content/slider/ring.png" alt="Кольцо.">
+                          <a href="#" class="view-link">
+                            <span class="visually-hidden">Корзина.</span>
+                            <svg width="20" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка посмотреть.">
+                              <use href="img/sprite.svg#view-eye"></use>
+                            </svg>
+                          </a>
+                          <img width="200" height="200" src="./img/content/sale/4.png" alt="Кольцо.">
                         </div>
                       </div>
                       <!-- If we need pagination -->
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
                   <div class="slider-card__info-wrapper">
                     <div class="slider-card__price-wrapper price-pipe">
-                      <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                      <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
-                      <span class="slider-card__sale-badge badge badge--sale-value">-45%</span>
+                      <span class="price-pipe__value price-pipe__value--new">39 200 &#x20bd;</span>
                     </div>
                     <div class="slider-card__description">Стильное кольцо из белого золота c бриллиантами</div>
-                  </div>
-                  <div class="slider-card__params">
-                    <select name="material-select">
-                      <option value="wGold" selected>Белое золото</option>
-                      <option value="yGold">Желтое золото</option>
-                      <option value="silver">Серебро</option>
-                    </select>
-                    <select name="size-select">
-                      <option value="s16" selected>Размер: 16</option>
-                      <option value="s17">Размер: 17</option>
-                      <option value="s18">Размер: 18</option>
-                    </select>
                   </div>
                 </div>
               </div>
@@ -1428,8 +1261,8 @@
                     </div>
                     <div class="day-product__price-info">
                       <div class="price-pipe">
-                        <span class="price-pipe__value price-pipe__value--new">41 000 &#x20bd;</span>
-                        <span class="price-pipe__value price-pipe__value--old">65 000 &#x20bd;</span>
+                        <span class="price-pipe__value price-pipe__value--new">22 000 &#x20bd;</span>
+                        <span class="price-pipe__value price-pipe__value--old">22 000 &#x20bd;</span>
                         <span class="price-pipe__sale-badge badge badge--sale-value">-45%</span>
                       </div>
                       <div class="timer">

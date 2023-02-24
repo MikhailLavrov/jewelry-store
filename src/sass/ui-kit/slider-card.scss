@@ -1,5 +1,5 @@
 .slider-card {
-  padding: 16px 24px 26px;
+  padding: 10px 24px 26px;
   max-width: 310px;
 
   position: relative;
@@ -8,6 +8,7 @@
   &:hover {
     box-shadow: 0 16px 32px rgba($color-default-black, 0.1);
   }
+  z-index: 9999 !important;
 }
 
 .slider-card__header {
@@ -55,14 +56,15 @@
 // .slider-card__params
 
 .slider-card .slider-card-swiper {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .slider-card__slider .swiper-pagination {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
+  bottom: 7px;
 }
 
 .slider-card__slider .swiper-pagination-bullet {
@@ -108,21 +110,38 @@
   transform: translateY(0);
 }
 
-.slider-card__params select {
-  appearance: none;
-  background: url('../../img/icons/select-icon.svg') no-repeat right;
-  background-position-x: calc(100% - 8px);
-
+.slider-card__params .custom-select__select {
   padding: 9px 16px;
 
   background-color: $color-light-4;
-  border:  none;
+}
 
-  font-family: $ff-inter;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
-  /* or 22px */
-  color: $color-default-black;
+.slider-card__params .custom-select__select-content {
+  width: 100%;
+  left: 0;
+  top: calc(100% + 3px);
+}
+
+.slider-card__params .custom-select__select-title {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 24px);
+
+    display: block;
+    width: 8px;
+    height: 3px;
+
+    transition: all 0.3s ease-out;
+
+    background-color: $color-default-black;
+
+    transform: translate(-3px, -50%) rotate(45deg);
+  }
+  &::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+  }
 }

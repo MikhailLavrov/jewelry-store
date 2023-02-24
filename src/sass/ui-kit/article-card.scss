@@ -1,5 +1,5 @@
 .article-card__image {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .article-card__image img {
@@ -7,7 +7,7 @@
 }
 
 .article-card__date {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 
   display: block;
 
@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 170%;
   /* identical to box height, or 16px */
   color: $color-default-black;
 }

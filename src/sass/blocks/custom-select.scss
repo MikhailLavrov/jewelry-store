@@ -1,0 +1,121 @@
+.custom-select__select {
+  margin: 0 auto;
+
+  width: auto;
+  height: auto;
+
+  position: relative;
+
+  &[data-state="active"] {
+    .custom-select__select-title {
+      &::before {
+        transform: translate(-3px, -50%) rotate(-45deg);
+      }
+
+      &::after {
+        transform: translate(3px, -50%) rotate(45deg);
+      }
+    }
+
+    .custom-select__select-content {
+      opacity: 1;
+    }
+
+    .custom-select__label + .custom-select__input + .custom-select__label {
+      max-height: 32px;
+    }
+  }
+}
+
+.custom-select__select-title {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 8px);
+
+    display: block;
+    width: 8px;
+    height: 3px;
+
+    transition: all 0.3s ease-out;
+
+    background-color: $color-default-black;
+
+    transform: translate(-3px, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+  }
+}
+
+.custom-select__select-content {
+  padding: 16px 0 12px;
+
+  position: absolute;
+  top: 30px;
+  left: -25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 197px;
+
+  background-color: $color-default-white;
+
+  transition: $transition-2;
+
+  opacity: 0;
+  z-index: 8;
+  box-shadow: 0 8px 20px rgba($color-default-black, 0.1);
+}
+
+.custom-select__input {
+  display: none;
+
+  &:checked + label {
+    background-color: $color-light-13;
+    background-image: url('../../img/icons/checked-tag.svg');
+    background-repeat: no-repeat;
+    background-position: 170px center;
+    transition: none;
+  }
+}
+
+.custom-select__label {
+  padding: 0 24px;
+
+  width: 100%;
+  min-height: 32px;
+
+  display: flex;
+  align-items: center;
+
+  transition: $transition-2;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  &:hover {
+    background-color: $color-light-13 !important;
+  }
+}

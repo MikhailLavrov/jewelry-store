@@ -15,22 +15,25 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .header__contacts {
+  margin-left: 2px;
+  margin-bottom: 8px;
   min-width: 30%;
 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 20px;
 }
 
 .header__city-selector {
+  min-width: 197px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   transition: $transition-2;
 
   &:hover svg {
@@ -58,6 +61,15 @@
   background-repeat: no-repeat;
   background-position: right;
 }
+
+.header__city-selector select ~ option {
+  padding: 9px 0;
+
+  &:hover {
+    background-color: #fafafa;
+  }
+}
+
 
 .header__phone {
   display: flex;
@@ -100,7 +112,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 70px;
+  gap: 62px;
 }
 
 .header__auth-links {
@@ -131,6 +143,7 @@
 
 
 .header__user-actions {
+  margin-right: -5px;
   max-width: 130px;
 
   display: flex;
