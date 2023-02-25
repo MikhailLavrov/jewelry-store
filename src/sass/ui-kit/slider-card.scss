@@ -100,14 +100,24 @@
 
   display: none;
   transform: translateY(100%);
-  transition: $transition-3;
+  transition: $transition-2;
 }
 
-.slider-card:hover .slider-card__params {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  transform: translateY(0);
+.slider-card {
+  &:hover .slider-card__params {
+    transition: $transition-2;
+    padding: 0 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transform: translateY(0);
+    position: absolute;
+    background-color: $color-default-white;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 16px 32px rgba($color-default-black, 0.1);
+  }
 }
 
 .slider-card__params .custom-select__select {

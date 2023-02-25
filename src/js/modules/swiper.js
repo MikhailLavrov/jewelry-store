@@ -26,12 +26,6 @@ export const saleSwiperInit = () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-    },
   });
 };
 

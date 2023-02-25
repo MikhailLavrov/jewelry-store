@@ -18,6 +18,12 @@ body {
   font-family: $ff-inter;
 }
 
+main {
+  margin: 0 auto;
+  overflow-x: hidden;
+  max-width: 1380px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
